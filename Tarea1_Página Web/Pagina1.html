@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1: Formulario</title>
+    <!-- Enlaces a los archivos de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilos adicionales */
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #031c35;
+        }
+        .frame {
+            width: 80%;
+            background-color: rgb(228, 179, 20);
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgb(255, 0, 0);
+        }
+        .personal-info {
+            text-align: center;
+        }
+        .personal-info img {
+            width: 200px;
+            border-radius: 50%;
+        }
+        .form-container {
+            text-align: center;
+        }
+        .form-container select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #fe0202;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .gallery-item {
+            border: 1px solid #00ff55;
+            border-radius: 4px;
+            padding: 10px;
+            background-color: white;
+            text-align: center;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <header class="personal-info">
+            <a href="#">
+            </a>
+        </header>
+
+        <!-- Página 1: Formulario con options y combobox -->
+        <section id="pagina1" class="form-container">
+            <!-- Contenido de la página 1 -->
+            <h2>Página 1: <br> Formulario</h2>
+            <form>
+                <label for="opcion">Por favor seleccione una opción para saber más de mí:</label>
+                <select id="opcion" name="opcion">
+                    <option value="opcion0">Selecciona una opción</option>
+                    <option value="opcion1">Opción 1</option>
+                    <option value="opcion2">Opción 2</option>
+                    <option value="opcion3">Opción 3</option>
+                </select>
+            </form>
+        </section>
+        
+        <!-- Galería de Arte (Opción 1) -->
+        <section id="contenidoOpcion1" class="content">
+            <h2>Galería de Obras de Arte</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="fotos\arte1.jpg" alt="Obra de Arte 1">
+                    <h3>Cebra</h3>
+                    <p>Una cebra pintada dentro de un ropero de mi cuarto.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="fotos\arte2.jpg" alt="Obra de Arte 2">
+                    <h3>Más animales</h3>
+                    <p>Dentro de mi cuarto, pinté más animales grandes como una jirafa, un elefante y un buitre posado en un árbol seco.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="fotos\arte3.jpg" alt="Obra de Arte 3">
+                    <h3>Arte para mi novia </h3>
+                    <p>Pinté un Stich enamorado para mi novia, la mujer que amo y respeto mucho.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Galería de Mascotas (Opción 2) -->
+        <section id="contenidoOpcion2" class="content">
+            <h2>Galería de Mascotas</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="fotos\mascota1.jpg" alt="Mascota Hogar 1">
+                    <h3>Mish</h3>
+                    <p>Es quien me acompaña siempre, mi fiel amigo que quita mis penas y angustias con un abrazo.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="fotos\mascota4.jpg" alt="Mascota Hogar 2">
+                    <h3>Tico</h3>
+                    <p>Un chihuaha que conocí hace poco, un amiguito sincero que me trae alegría y momentos de cariño.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="fotos\mascota3.jpg" alt="Mascota Exótica 1">
+                    <h3>Peluso</h3>
+                    <p>Un conejo cabeza de león que es más perverso que un niño mal educado, es inquieto y da muchos dolores de cabeza, pero a la vez muchas sonrisas.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="fotos\mascota2.jpg" alt="Mascota Exótica 2">
+                    <h3>Serpiente</h3>
+                    <p>una mascota no muy amigable, pero llamativa por sus colores y textura de su piel.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="fotos\mascota5.jpg" alt="Mascota Exótica 2">
+                    <img src="fotos\mascota6.jpg" alt="Mascota Exótica 2">
+                    <h3>Cusi y Sherpa</h3>
+                    <p>Dos guardianes inteligentes y felices, que muestran respeto y lealtad hacia sus amos.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="fotos\mascota7.jpg" alt="Mascota Exótica 2">
+                    <h3>Ardillas</h3>
+                    <p>Dos ardillas muy glotonas, que da gusto verlas comer.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Galería de Pasatiempos, Comidas, etc. (Opción 3) -->
+        <section id="contenidoOpcion3" class="content">
+            <h2>Galería de Pasatiempos y Comidas Favoritas</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="fotos\comida1.jpg" alt="Pasatiempo 1">
+                    <h3>Caldo de pescado</h3>
+                    <p>Un buen caldo de pescado, con cangrejos y gallina.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="fotos\comida2.jpg" alt="Pasatiempo 2">
+                    <h3>Pastas</h3>
+                    <p>Unas deliciosas pastas caseras y de restaurantes.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="fotos\comida3.jpg" alt="Comida Favorita 1">
+                    <h3>Desayunos con amor</h3>
+                    <p>Unos ricos desayunos con mucho amor y buen sabor cocinados por mi novia.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="fotos\pasatiempo1.jpg" alt="Comida Favorita 2">
+                    <h3>Descansar y escuchar música</h3>
+                    <p>Descansar y escuchar música clásica en español.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="fotos\pasatiempo2.jpg" alt="Otro Elemento 1">
+                    <h3>Observar la naturaleza</h3>
+                    <p>Respirar aire puro y ver colores naturales.</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="fotos\pasatiempo3.jpg" alt="Otro Elemento 2">
+                    <h3>Cosechar frutas</h3>
+                    <p>Cosechar ricas frutas sin químicos.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        const opcionSelector = document.getElementById("opcion");
+        const contenidoOpcion1 = document.getElementById("contenidoOpcion1");
+        const contenidoOpcion2 = document.getElementById("contenidoOpcion2");
+        const contenidoOpcion3 = document.getElementById("contenidoOpcion3");
+        
+        opcionSelector.addEventListener("change", function() {
+            contenidoOpcion1.classList.remove("active");
+            contenidoOpcion2.classList.remove("active");
+            contenidoOpcion3.classList.remove("active");
+            
+            const opcionSeleccionada = opcionSelector.value;
+            
+            if (opcionSeleccionada === "opcion1") {
+                contenidoOpcion1.classList.add("active");
+            } else if (opcionSeleccionada === "opcion2") {
+                contenidoOpcion2.classList.add("active");
+            } else if (opcionSeleccionada === "opcion3") {
+                contenidoOpcion3.classList.add("active");
+            }
+        });
+    </script>
+
+    <!-- Enlace al archivo de jQuery y los scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

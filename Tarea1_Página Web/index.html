@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <br>
+  <br> 
+  <br>
+  <!-- Barra de paginación numérica estática -->
+<nav aria-label="Barra de paginación">
+  <ul class="pagination justify-content-center">
+
+      <li class="page-item"><a class="page-link" href="Pagina1.html" target="_blank">Página 1</a></li>
+      <li class="page-item"><a class="page-link" href="Pagina2.html" target="_blank">Página 2</a></li>
+      <li class="page-item"><a class="page-link" href="Pagina3.html" target="_blank">Página 3</a></li>
+      <li class="page-item"><a class="page-link" href="Pagina4.html" target="_blank">Página 4</a></li>
+  </ul>
+</nav>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Personal</title>
+  <!-- Enlaces a los archivos de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+ <!-- Estilos CSS personalizados -->
+ <style>
+    body {
+      background-color: black;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      
+    }
+    h2 {
+            color: yellow;
+            text-align: center;
+        }
+     /* Agregar estilos específicos para el encabezado si es necesario */
+     header {
+      /* Por ejemplo: */
+      padding: 20px;
+    }
+
+    /* Agregar estilos específicos para las secciones si es necesario */
+    section {
+      /* Por ejemplo: */
+      padding: 20px;
+    }
+
+    /* Estilos de Flexbox */
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .flex-item {
+      background-color: #f0f0f0;
+      margin: 10px;
+      padding: 20px;
+      flex-basis: 30%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- Div con enlace e imagen personal -->
+    <div class="personal-info">
+   
+        <img src="fotos\img.jpg" alt="Mi Foto Personal" style="width: 200px;">
+      </a>
+    </div>
+  </header>
+
+  <!-- Sección de Biografía -->
+  <section id="biografia" class="container mt-4">
+    <h2>Autobiografía</h2>
+    <p>Mi nombre es Emanuel Isaac Roque Sandoval, cuento con la edad de 21 años, y</p>
+    <p>resido en un municipio de Jutiapa. Soy una persona amable y generosa, con ganas de</p>
+    <p>aprender cosas nuevas en mi vida personal, laboral y estudiantil.</p>
+  </section>
+
+  <!-- Sección de Otra Sección -->
+  <section id="otra_seccion" class="container mt-4">
+    <h2>¿Qué espero aprender en este curso?</h2>
+    <p>Conocer los conceptos básicos de la web, realizar páginas llamativas y poco a poco,</p>
+    <p>adentrarme a cosas complejas e interesantes para poder implementar y tener la experiencia de</p>
+    <p>ejercer prácticas del mundo de la tecnología.</p>
+  </section>
+
+  <!-- Otra Sección 2 -->
+  <section id="otra_seccion2" class="container mt-4">
+    <h2>¿Experiencia en desarrollo web?</h2>
+    <p>Lamentablemente no poseo experiencia en desarrollo web, pero, actualmente existen muchas</p>
+    <p>herramientas para indagar información y aprender de forma personal, con el mayor interés posible.</p>
+    <p>Así mismo, curso una carrera importante y me guía un catedrático que posee mucho conocimiento profesional,</p>
+    <p>espero en Dios y en él que ayuden a formarme de manera satisfactoria.</p>
+    <a href="https://github.com/Roquebj1">Click aquí para saber más sobre mí en el ámbito de programación.</a> <!--Esta etiqueta hipervinculo me dirige a otra url-->
+    <br>
+    <br> 
+    <br>
+    
+    <h2>Mi estilo durante la pandemia</h2>
+    
+
+  <!-- Enlace al archivo de jQuery y los scripts de Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- 30 etiquetas con atributos -->
+
+  <img src="fotos\img1.jpg" alt="Descripción de la imagen" width="200" height="200">
+  <p>Mi estilo durante la pandemia: <br> Durante la crisis en la pandemia nos vimos obligados a cuidarnos y a manetner una cuarentena para prevalecer nuestra salud, <br> convivimos más en familia y pusimos en práctica las aptitudes de uno mismo para matar el aburrimiento, <br> mi estilo cambió desde esa ocasión; ahora mi pelo lo uso largo y me gusta mucho. </p>
+  <button type="button" onclick="alert('Acá muestro un video corto acerca de mi trayectoria de vida')">Click aquí para más información <br> Mi video personal</button>
+  <br>
+  <br>
+
+  <video width="320" height="240" controls>
+    <source src="fotos\videopersonal.mp4" type="video/mp4">
+    Tu navegador no admite el elemento de video.
+  </video>
+
+
+  
+  
+  <!-- Flexbox -->
+  <div class="flex-container">
+    <div class="flex-item" style="background-color: #ff7675;">Aptitudes: <br> Dibujante y pintor, Memorizando, Conocimiento en la Naturaleza.</div>
+    <div class="flex-item" style="background-color: #74b9ff;">Valores y Principios: <br> Amable, Respetuoso, Creativo, Sincero, Leal. </div>
+    <div class="flex-item" style="background-color: #55efc4;">Antivalores:<br> Impaciente, Enojado, Timido, Sensible.</div>
+    <div class="flex-item" style="background-color: #11044c;">Misión:<br>Mi misión es completar mi educación en Ingeniería en Sistemas con dedicación y perseverancia. <br> Busco adquirir un profundo conocimiento de las tecnologías y herramientas más actuales en el campo.</div>
+    <div class="flex-item" style="background-color: #a29bfe;">Visión: <br> Mi visión es convertirme en un profesional destacado en el campo de la Ingeniería en Sistemas, <br> reconocido por mi capacidad para diseñar soluciones tecnológicas efectivas y por mi liderazgo en la implementación de proyectos innovadores.</div>
+
+  </div>
+</body>
+
+<br>
+<br>
+<br>
+
+
+
+ <!-- Agregar un iframe en lugar de frameset para mostrar contenido externo -->
+ <section class="container mt-4">
+  <h2>Explora las páginas sin cambiar de pestaña:</h2>
+  <iframe id="frameContainer" src="" frameborder="0" width="100%" height="400"></iframe>
+  <div class="button-container">
+    <button onclick="loadFrame('Pagina1.html')">Cargar Página 1</button>
+    <button onclick="loadFrame('Pagina2.html')">Cargar Página 2</button>
+    <button onclick="loadFrame('Pagina3.html')">Cargar Página 3</button>
+    <button onclick="loadFrame('Pagina4.html')">Cargar Página 4</button>
+
+  </div>
+</section>
+
+<style>
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .button-container button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .button-container button:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+<script>
+  function loadFrame(url) {
+    const frameContainer = document.getElementById('frameContainer');
+    frameContainer.src = url;
+  }
+</script>
+
+</html>
